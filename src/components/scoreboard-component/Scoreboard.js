@@ -1,7 +1,11 @@
 import React from 'react'
 import BottomRow from '../../BottomRow.js';
 
-function Scoreboard() {
+function Scoreboard(props) {
+    // pass in props (objects)
+    // console.log(props)
+    const {homeScore, awayScore} = props
+
     return (        
         <section className="scoreboard">
         <div className="topRow">

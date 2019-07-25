@@ -11,7 +11,8 @@ const [awayScore, setAwayScore] = useState(0);
 
   return (
     <div className="container">
-      <ScoreBoard />
+      {/* create props to pass variables to Scoreboard function component */}
+      <ScoreBoard homeScore={homeScore} awayScore={awayScore} />
 
       <section className="buttons">
         <div className="homeButtons">
